@@ -16,3 +16,37 @@ const arrAfterMap = arr.map((item, index, originArr) =>{
 })
 
 console.log('wynik', arrAfterMap)
+
+// filter 
+// zwraca tablice równą bądzi mniejszą od orginalnej
+// !!!!!!!! elementy są nie zminione !!!!!!!!!!!!!!!
+const zakupy = [
+    {
+        key: 'Truskawki',
+        type: 'owoc'
+    },
+    {
+        key: 'Pietruszka',
+        type: 'Warzywo'
+    },
+    {
+        key: 'Wołowina',
+        type: 'Mięso'
+
+    },
+    {
+        key: 'Piwo',
+        type: 'Alkohol'
+    }
+]
+
+
+const zakupyWithOutAlkohol = zakupy.filter(item => {
+    console.log('Czym jest item w tym przypadku ', item)
+    if(item.type !== 'Alkohol') {
+        return item
+    }
+})
+
+console.log('po filtrowaniu', zakupyWithOutAlkohol)
+
