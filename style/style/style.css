@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.plan-zajec {
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+.plan-zajec--co-robilismy {
+  list-style-type: upper-roman;
+}
+
+.plan-zajec--przerwy {
+  list-style-type: square;
+}
+
+.plan-zajec-lista {
+  font-size: 16px;
+}
+
+.plan-zajec-lista--item {
+  color: cornflowerblue;
+}
+
+.plan-zajec-lista--item__nowosc {
+  font-weight: 900;
+}
+
+.plan-zajec-lista--item__objad {
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */

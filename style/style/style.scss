@@ -1,0 +1,45 @@
+// blok section
+
+.plan-zajec {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    &--co-robilismy {
+        list-style-type: upper-roman;
+    }
+    &--przerwy {
+        list-style-type: square;
+    }
+}
+
+// stylowanie drugiego bloku 
+
+.plan-zajec-lista {
+    font-size: 16px;
+    &--item {
+        color: cornflowerblue;
+        &__nowosc {
+            font-weight: 900;
+        }
+        &__objad {
+            font-style: italic;
+        }
+    }
+}
+
+// blok z buttonem 
+
+.btn {
+    // stylujemy przycisk 
+    &--element {
+        // stylujemy ikone
+    }
+    &--element-2 {
+        // stylujemy napis 
+        &__modyfikator {
+            
+            //stylujemy konkrety frmagmant nazy przycisku
+        }
+    }
+
+}

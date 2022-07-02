@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,66 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style/style.css">
 </head>
+
 <body>
-    
-<h1>Powtórka z JS</h1>
+
+    <h1>Powtórka z JS</h1>
+
+    <section class="plan-zajec"> 
+        <!-- section jest blokiem -->
+        <ul class="plan-zajec--co-robilismy plan-zajec-lista">
+            <!-- ul jest elementem i jednocześnie może być blokim
+                plan-zajec--co-robilismy to jest Elment bloku plan-zajec
+                plan-zajec-lista nazwa bloku dla listy
+            
+            -->
+            <li class="plan-zajec-lista--item">MAP</li>
+            <li class="plan-zajec-lista--item">Filter</li>
+            <li class="plan-zajec-lista--item">Operatory porównania</li>
+            <li class="plan-zajec-lista--item">Find oraz FindIndex</li>
+            <li class="plan-zajec-lista--item plan-zajec-lista--item__nowosc">reduce</li>
+            <li class="plan-zajec-lista--item">fetch</li>
+            <li class="plan-zajec-lista--item">i inne</li>
+        </ul>
+        <ul class="plan-zajec--przerwy plan-zajec-lista">
+             <!-- ul jest elementem  -->
+            <li class="plan-zajec-lista--item">10:00</li>
+            <li class="plan-zajec-lista--item">11:05</li>
+            <li class="plan-zajec-lista--item">12:10</li>
+            <li class="plan-zajec-lista--item plan-zajec-lista--item__objad">13:30 - objadowa</li>
+            <li class="plan-zajec-lista--item">15:20 wymuszona przez prowadzącego</li>
+ 
+        </ul>
+    </section>
+
+    <button class="btn"> 
+        <i class="btn--element">Ikona</i>
+        <span class="btn--element-2">Nazwa 
+            <span class="btn-element-2__modyfikator">
+                przycisku
+            </span>
+        </span>
+    </button>
 
 
-<ul>
-    <li>MAP</li>
-    <li>Filter</li>
-    <li>Operatory porównania</li>
-</ul>
+
+
+    <h2>BEM</h2>
+    <p>metodologia nazwywania class w css/scss/lass</p>
+    <p>B - Blok</p>
+    <p>E - element</p>
+    <p>M - modyfikator</p>
+
+
+    <!-- 
+        błąd el. blokowy nie może być wewnątrz el. liniowego
+        <span>
+            <p> </p>
+        </span> 
+-->
+
+
     <script src="main.js"></script>
 </body>
+
 </html>

@@ -174,3 +174,98 @@ const sumaWithReduce = zakupy2.reduce((previousValue, currentValue)=> {
 }, 0)
 
 console.log(sumaWithReduce)
+
+
+// search w stringach 
+
+const imie = "Łukasz"
+
+console.log(imie.search("kasz")) // zwróci 2 
+// działenie searcha string rozbija na tablicę ["Ł", 'u', 'k', 'a', 's','z']
+// podaje na którym indeksie zaczyna się szukana fraza 
+console.log(imie.search('yszek')) // zwróci -1 bo szukanej frazy nie ma
+
+
+// find i findIndexOf
+
+// ad find - wada zwraca tylko jeden elelemt , pierwszy znaleziony
+
+const mnijeNiz20 = zakupy2.find(item => item.price > 20 )
+// poprawne rozwiązanie daje filtr
+// zwróci     {
+//     key: 'Truskawki',
+//     type: 'owoc',
+//     price: 10
+// },
+
+
+const mnijeNiz20FindIndex = zakupy2.findIndex(item => item.price > 20 )
+
+// zwróci  0
+
+
+const post = 'poniższego kodu na początku skryptu, KACZKA co pozwala na użycie reduce z implementacjami, które nie wspierają tej funkcji.'
+
+const brzydkieSłowa = ['kaczka', 'inflacja', 'morawiecki', 'ziobro']
+// czy brzykie słowa są w tekście post 
+brzydkieSłowa.forEach(item => {
+    const zDuzejPost = post.toUpperCase()
+  const xd =  zDuzejPost.search(item.toUpperCase())
+  console.log(xd)
+})
+
+// get , set w constructor class 
+
+const obj = {
+    name: "Jan",
+    age: 50
+}
+
+obj.age = 51 // to jeste pewien rodzaj seta
+
+class Pracownika {
+    constructor(name, age, pensja, premia) {
+        this.name = name
+        this.age = age
+        this.pensja = pensja
+        this.premia = premia
+    }
+
+    // get 
+    get info() {
+        return `Imię pracowanika to: ${this.name} i jest w wieku: ${this.age}`
+    }
+    get zarobi() {
+        return `Pracowniek ${this.name} zarabia pensji : ${this.pensja} oraz premi ${this.premia}`
+    }
+    get laczneZarobki() {
+        return this.pensja + this.premia
+    }
+    // to jest błąd tak nie mozna w get 
+    // get zmien() {
+    //     this.pensja = this.premia + this.pensja
+    // }
+
+    // set 
+    set podwyzka(val) {
+        this.pensja = val
+    }
+}
+
+ const obj2 = new Pracownika('Adam', 50, 4000, 1000)
+
+ Object.seal(obj2) // uszczelniamy objekt, żeby go zminić musimy używać set
+
+console.log( obj2.zarobi)
+
+obj2.podwyzka = 5000
+
+
+console.log( obj2.zarobi)
+// fetch 
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(res => res.json())
+.then(res => {
+    console.log(res)
+})
+
