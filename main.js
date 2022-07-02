@@ -49,4 +49,31 @@ const zakupyWithOutAlkohol = zakupy.filter(item => {
 })
 
 console.log('po filtrowaniu', zakupyWithOutAlkohol)
+ 
+// Operatory porównania
+
+const number1 = 500
+
+const number2 = '500'
+
+// operator ==
+
+console.log('number1 == number2', number1 == number2) // zwróci true
+
+// operator === 
+
+console.log('number1 === number2', number1 === number2) // zwróci false
+
+
+// operator !=
+console.log('number1 != number2',number1 != number2)  // zwróci false
+
+// operator !==
+console.log('number1 !== number2',number1 !== number2)  // zwróci true
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! operator =
+// = przypisuje wartość z lewej strony zminnej po prawej 
+// const prawaStrtona = warosciZLewej
+
 
