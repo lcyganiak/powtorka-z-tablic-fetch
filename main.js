@@ -268,4 +268,16 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 .then(res => {
     console.log(res)
 })
+function cos() {
+    console.log(123)
+}
 
+// za pomocą Js tworzymy jakiś elemnt html, do którego przypisujemy event click
+// oba rozwiązania mają zapobiec sytułacji że po wczytaniu strony od razy , 
+//bez naszej ingerncji wykonajsię kilki na elemncie
+// document.getElementById('exmp').onclick = () => cos()
+// oba rozwiązanie są poprawne, z tym że pierwsze jest nowsze, co nie oznacza że lepsze. 
+// 
+// document.getElementById('exmp').onclick = function() {
+
+// }
